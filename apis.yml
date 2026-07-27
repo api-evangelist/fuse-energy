@@ -1,8 +1,24 @@
 aid: fuse-energy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fuse-energy.png
 name: Fuse Energy
-description: 'Fuse Energy is a company surfaced as a portfolio company of creandum, multicoin-capital,
-  ribbit-capital and added to the API Evangelist network as a stub for enrichment. Sector: climate. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: 'Fuse Energy (Fuse Energy Supply Limited) is a UK-based residential and
+  business energy supplier providing gas and electricity on variable, fixed, and multi-rate
+  tariffs, alongside EV charging, solar and battery export tracking, multi-property
+  account management, and an in-app AI energy assistant called Plugs. The company positions
+  itself around beating the UK energy price cap, sign-up in under three minutes, and
+  24-hour customer support. It operates a consumer- and business-facing web and mobile
+  app experience and publishes no public API, developer portal, or SDKs at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/fuse-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Climate
+- Energy
+- Utilities
+- Electricity
+- Gas
+- EV Charging
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fuse-energy-domain-security.yml
 - type: Website
   url: https://www.fuseenergy.com/
+- type: Blog
+  url: https://www.fuseenergy.com/blog
+- type: Support
+  url: mailto:support@fuseenergy.com
+- type: SignUp
+  url: https://www.fuseenergy.com/app/boarding/premises
+- type: TermsOfService
+  url: https://www.fuseenergy.com/legal/energy-supply-terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.fuseenergy.com/legal/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
